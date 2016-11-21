@@ -4,8 +4,8 @@ import java.util.Scanner;
  * CSI Florida
  * Reto Putadon
  * 
- * El siguiente código busca una letra dentro de una frase
- * y devuelve dónde se ha encontrado y ctas veces
+ * El siguiente cï¿½digo busca una letra dentro de una frase
+ * y devuelve dï¿½nde se ha encontrado y ctas veces
  * 
  * Hay dos errores
  * 
@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Putadon {
 	
 	public static void main(String[] args) {
-		//Variables inicialización
+		//Variables inicializaciï¿½n
 		String frase="";
 		int numPos=0;
 		int numRepeticiones=0;
@@ -23,15 +23,15 @@ public class Putadon {
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.println("Introduce tu frase");
-		frase = sc.nextLine();
+		frase = sc.next();
 		
 		System.out.println("Introduce la letra a buscar");
-		letra = sc.nextLine().charAt(0); //charAt(0) devuelve la primera letra
+		letra = sc.next().charAt(0); //charAt(0) devuelve la primera letra
 		
 		//Buscamos las letras
 		for(int i=0;i<frase.length();i++){
-			if(letra==frase.charAt(i-1)){
-				numRepeticiones=numRepeticiones;
+			if(letra==frase.charAt(i)){
+				numRepeticiones=numRepeticiones+1;
 				System.out.println("Letra "+letra+" encontrada en la posicion "+i);
 			}
 		}
